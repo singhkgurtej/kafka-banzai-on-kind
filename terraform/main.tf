@@ -50,7 +50,7 @@ resource "kind_cluster" "default" {
 resource "github_repository" "terraform-flux" {
   name        = var.github_repository
   description = var.github_repository
-  visibility  = "public"
+  visibility  = "private"
   auto_init   = true # This is extremely important as flux_bootstrap_git will not work without a repository that has been initialised
 }
 
